@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="manifest" href="moduleservices/pwa/manifest"></link>
+<link rel="apple-touch-icon" sizes="48x48" href="/accone/img/accone.AppLogo.48.png?eUWtzKd98rX0B_v+9XzCnQ"></link>
+<link rel="apple-touch-icon" sizes="96x96" href="/accone/img/accone.AppLogo.96.png?xcDSqLgWsXTzGyH1yaUDhw"></link>
+<link rel="apple-touch-icon" sizes="192x192" href="/accone/img/accone.AppLogo.192.png?tau0G2X8x0RhgJQ45mcyhA"></link>
+<link rel="apple-touch-icon" sizes="512x512" href="/accone/img/accone.AppLogo.512.png?3sgs4Pih5i2KoUDKVQc6dw"></link>
+
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1" />
+<script type="text/javascript">
+(function () {
+    function appendMetaTagAttributes(metaTag, attribute, values) {
+        var elem = document.querySelector("meta[name=" + metaTag + "]");
+
+        if (elem) {
+            var attrContent = elem.getAttribute(attribute);
+            elem.setAttribute(attribute, (attrContent ? attrContent + "," : "") + values.join(","));
+        }
+    }
+
+    if (navigator && /OutSystemsApp/i.test(navigator.userAgent)) {
+        // If this app is running on the native shell, we want to disable the zoom
+        appendMetaTagAttributes("viewport", "content", ["user-scalable=no", "minimum-scale=1.0"]);
+    }
+})();</script>
+
+        <script type="text/javascript">try { window.indexedDB; } catch { }</script>
+<script type="text/javascript" src="scripts/OutSystemsManifestLoader.js?3F3fZzzNKkqKoP2DsjtxFw"></script>
+<script type="text/javascript" src="scripts/OutSystems.js?RnlDcii3Xz75iIHHERIZtA"></script>
+<script type="text/javascript" src="scripts/OutSystemsReactView.js?0bmp5RZ49TZneVNXnO6ymw"></script>
+<script type="text/javascript" src="scripts/cordova.js?7KqI9_oL9hClomz1RdzTqg"></script>
+<script type="text/javascript" src="scripts/NullDebugger.js?pG_2wlzY3NYiuKZRtoLyQQ"></script>
+<script type="text/javascript" src="scripts/accone.appDefinition.js?6AJKb7bXQB+sV5B8HbVE5g"></script>
+<script type="text/javascript" src="scripts/OutSystemsReactWidgets.js?IdWooa_erXOfwU01FQUTuA"></script>
+<link type="text/css" rel="stylesheet" href="css/_Basic.css?EqGzAe81QbZLXJyfY3oLwA"></link>
+
+        <script type="text/javascript">OSManifestLoader.indexVersionToken = "zZ1fG_bCPm4+qRvZFChXPg";
+</script>
+    </head>
+    <body>
+        <div id="reactContainer"></div>
+        <script> if (typeof navigator !== "undefined" && "serviceWorker" in navigator && !(/OutSystemsApp/i).test(navigator.userAgent)) { navigator.serviceWorker.register("pwaServiceWorker.js"); } </script>
+<noscript><span>JavaScript is required</span></noscript>
+
+        <script type="text/javascript" src="scripts/accone.index.js?c3kVNi+SDzLOEMWuXQsCLw"></script>
+
+    </body>
+</html>
